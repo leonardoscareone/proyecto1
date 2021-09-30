@@ -1,0 +1,183 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+// navegador
+.navbar{
+    background-color: $colornav;
+
+    &__logo{
+        height: 40px;
+        width: 35px;
+    }
+}
+
+// body
+body{
+    background-color: $colorbody;
+}
+
+// main
+#containerCard{
+    margin: 30px;
+
+    &__uno{
+        text-align:justify;
+    }
+
+    &__dos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__logo{
+        width: 50%;
+    }
+
+    &__new{
+        text-transform: lowercase;
+        font-size: 10px;
+    }
+
+    &__img{
+        height: 20rem;
+    }
+}
+
+// diseño subitulos
+h1{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: 'Noto Serif', serif;
+    font-size: 30px;
+    margin: 20px;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 25px;
+    margin: 10px;
+    font-family: 'Noto Serif', serif;
+}
+
+// diseño parrafos
+p{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+}
+
+// pagina 2 Club
+table{
+    border: 3px solid;
+    text-align: center;
+    margin: 20px;
+}
+    
+th {
+    background-color:$colorcards;
+    border: 1px solid;
+    color: $colornav;
+}
+      
+tr, td {
+    background-color: $colorcards;
+    border: 1px solid;
+    color: $colornav;
+    font-family: 'Roboto', sans-serif;
+}
+
+// pagina 3 Estadio
+.imagenesEstadio{
+    margin: 10px;
+
+    &__titulo{
+        margin: 20px;
+    }
+
+    &__img{
+        margin: 20px;
+        display: inline-block;
+        width: 320px;
+        height: 300px;
+    }
+}
+
+// pagina 4 Socios
+.sectionSocios{
+    margin: 20px;
+    display: block;
+
+    &__lista{
+        color: black;
+        font-weight: 100;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        list-style: none;
+    }
+
+    &__img{
+        margin: 10px;
+        display: inline-block;
+        width: 320px;
+        height: 300px;
+    }
+}
+
+
+// pagina 5 contactos
+.paginaContacto{
+    height: 800px;
+
+    &__legend{
+        font-size: 30px;
+        font-family: 'Noto Serif', serif;
+    }
+
+    &__form{
+        padding: 10px;
+    }
+}
+
+// footer
+.footer{
+    background-color: $colornav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+
+    &__parrafo{
+        color: $colorbody;
+    }
+}
+
+
+@media only screen and ( max-width:600px) {
+
+}
+
+@media only screen and ( min-width:600px) {
+    .sectionSocios__img{
+    width: 500px;
+    height: 350px;
+    }
+
+    .imagenesEstadio__img{
+    width: 500px;
+    height: 350px;    
+    }
+}
+
+@media only screen and ( min-width:992px){
+    .sectionSocios__img{
+        width: 600px;
+        height: 400px;
+    }
+
+    .imagenesEstadio__img{
+        width: 600px;
+        height: 400px;    
+        }
+}
