@@ -29,17 +29,16 @@ body {
 
 h1 {
   text-decoration: underline;
+  text-transform: uppercase;
+  font-family: 'Noto Serif', serif;
   font-size: 30px;
-  font-family: "Noto Serif";
-  margin: 20px;
-  text-transform: uppercase; }
+  margin: 20px; }
 
 h2 {
-  text-decoration: none;
+  text-transform: uppercase;
   font-size: 25px;
-  font-family: "Noto Serif";
   margin: 10px;
-  text-transform: uppercase; }
+  font-family: 'Noto Serif', serif; }
 
 p {
   color: black;
@@ -66,7 +65,7 @@ tr, td {
   margin: 10px; }
   .imagenesEstadio__titulo {
     margin: 20px; }
-  .imagenesEstadio__img, .sectionSocios__img {
+  .imagenesEstadio__img {
     margin: 20px;
     display: inline-block;
     width: 320px;
@@ -81,23 +80,45 @@ tr, td {
     font-family: Georgia, 'Times New Roman', Times, serif;
     list-style: none; }
   .sectionSocios__img {
-    margin: 10px; }
+    margin: 10px;
+    display: inline-block;
+    width: 320px;
+    height: 300px; }
 
-.paginaContacto {
-  height: 800px; }
-  .paginaContacto__legend {
-    font-size: 30px;
-    font-family: 'Noto Serif', serif; }
-  .paginaContacto__form {
-    padding: 10px; }
+.paginaContacto__legend {
+  font-size: 30px;
+  font-family: 'Noto Serif', serif; }
+
+.paginaContacto__form {
+  padding: 10px;
+  margin: 50px; }
+
+.paginaContacto__fondo {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.paginaContacto__img {
+  height: 100%;
+  width: 100%; }
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 30px; }
+  .carousel__titulo {
+    margin: 20px; }
+  .carousel__img {
+    height: 700px; }
 
 .footer {
   background-color: #00006d;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
-  padding: 20px; }
+  height: 70px; }
   .footer__parrafo {
     color: white; }
 
@@ -105,7 +126,7 @@ tr, td {
   .sectionSocios__img {
     width: 500px;
     height: 350px; }
-  .imagenesEstadio__img, .sectionSocios__img {
+  .imagenesEstadio__img {
     width: 500px;
     height: 350px; } }
 
@@ -113,6 +134,6 @@ tr, td {
   .sectionSocios__img {
     width: 600px;
     height: 400px; }
-  .imagenesEstadio__img, .sectionSocios__img {
+  .imagenesEstadio__img {
     width: 600px;
     height: 400px; } }

@@ -29,48 +29,58 @@
             <li class="nav-item"><a class="nav-link active" href="socios.html">Socios</a></li>
             <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
         </ul>
-    </div>
+      </div>
     </div>
   </nav>
 </header>
-  <!-- Formulario -->
-<main class="paginaContacto">
-<form class="paginaContacto__form">
-  <fieldset>
-    <legend class="paginaContacto__legend">Formulario de Contacto</legend>
-  <div class="row g-3 align-items-center">
-    <div class="col-auto"><label for="InputEmail" class="col-form-label">Nombre</label></div>
-    <div class="col-auto"><input type="text" class="form-control" id="InputEmail" aria-describedby="emailHelpInline" placeholder="Ingrese su Nombre"></div>
+<main>
+<div class="container-fluid">
+  <div class="row paginaContacto">
+      <div class="col-sm-8 col-md-8">
+        <div>
+          <form class="paginaContacto__form">
+            <fieldset>
+              <legend class="paginaContacto__legend">Formulario de Contacto</legend>
+            <div class="row g-3 align-items-center">
+              <div class="col-auto"><label for="InputEmail" class="col-form-label">Nombre</label></div>
+              <div class="col-auto"><input type="text" class="form-control" id="InputEmail" aria-describedby="emailHelpInline" placeholder="Ingrese su Nombre"></div>
+            </div>
+            <div class="row g-3 align-items-center">
+              <div class="col-auto"><label for="inputPassword6" class="col-form-label">Contraseña</label></div>
+              <div class="col-auto"><input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" placeholder="Ingrese su Contraseña"></div>
+            </div>
+            <div class="row g-3 align-items-center">
+              <div class="col-auto"><label for="InputEmail" class="col-form-label">Correo Electronico</label></div>
+              <div class="col-auto"><input type="text" class="form-control" id="InputEmail" aria-describedby="emailHelpInline" placeholder="Ingrese su Correo"></div>
+            </div>
+            <div class="row g-3 align-items-center">
+              <div class="col-auto"><label for="Select" class="form-label">Estado Civil</label></div>
+              <div class="col-auto"><select id="Select" class="form-select"></div>
+                <option value="">Casado/a</option>
+                <option value="">Soltero/a</option>
+            </div>
+            <div class="g-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Recibir Noticias</label>
+            </div>
+            <textarea rows="10" placeholder="Comentarios"></textarea>
+           </fieldset>
+            <button type="submit" class="btn btn-primary">Enviar Formulario</button>
+            <button type="reset" class="btn btn-primary">Limpiar Formulario</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-4 col-md-4 paginaContacto__fondo">
+        <img src="./imagenes/bocafondo.jpg" alt="imagen decorativa con el escudo" class="paginaContacto__img">
+    </div>
   </div>
-  <div class="row g-3 align-items-center">
-    <div class="col-auto"><label for="inputPassword6" class="col-form-label">Contraseña</label></div>
-    <div class="col-auto"><input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline" placeholder="Ingrese su Contraseña"></div>
-  </div>
-  <div class="row g-3 align-items-center">
-    <div class="col-auto"><label for="InputEmail" class="col-form-label">Correo Electronico</label></div>
-    <div class="col-auto"><input type="text" class="form-control" id="InputEmail" aria-describedby="emailHelpInline" placeholder="Ingrese su Correo"></div>
-  </div>
-  </div>
-  <div class="row g-3 align-items-center">
-    <div class="col-auto"><label for="Select" class="form-label">Estado Civil</label></div>
-    <div class="col-auto"><select id="Select" class="form-select"></div>
-      <option value="">Casado/a</option>
-      <option value="">Soltero/a</option>
-  </div>
-  <div class="g-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Recibir Noticias</label>
-  </div>
-  <textarea name="" id="" cols="10" rows="10" placeholder="Comentarios"></textarea>
- </fieldset>
-  <button type="submit" class="btn btn-primary">Enviar Formulario</button>
-  <button type="reset" class="btn btn-primary">Limpiar Formulario</button>
-</form>
+</div>
 </main>
+
     <!-- Footer con las imagenes de las redes sociales -->
 <footer class="footer">
     <section>
-        <p class="footer__parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, vel et reprehenderit est at rerum voluptatibus atque voluptate deleniti pariatur odio totam dolores ipsum inventore ducimus quibusdam quas possimus ut?</p>
+        <p class="footer__parrafo">© Copyright 2021 Boca Juniors</p>
     </section>
     <section>
         <a href=""><img src="./imagenes/logos/ig.png" alt="logo que redirige a instagram"></a>

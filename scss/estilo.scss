@@ -128,8 +128,6 @@ tr, td {
 
 // pagina 5 contactos
 .paginaContacto{
-    height: 800px;
-
     &__legend{
         font-size: 30px;
         font-family: 'Noto Serif', serif;
@@ -137,6 +135,34 @@ tr, td {
 
     &__form{
         padding: 10px;
+        margin: 50px;
+    }
+
+    &__fondo{
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.carousel{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+    &__titulo{
+        margin: 20px;
+    }
+
+    &__img{
+        height: 700px;
     }
 }
 
